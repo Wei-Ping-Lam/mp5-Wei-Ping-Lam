@@ -1,8 +1,5 @@
 package Entities;
 
-import Entities.SingleTable;
-import Entities.Dish;
-
 public class Serving {
 
     private SingleTable toTable;

@@ -23,8 +23,9 @@ public class Restaurant {
         this.restaurantName = restaurantName;
         this.seatingSystem = new SeatingSystem(tableConfigFilePath);
         this.menu = new Menu(menuConfigFilePath);
-        OrderQueue.getOrCreateInstance(10);
-        ServingQueue.getOrCreateInstance(10);
+        final int queueSize = 10;
+        OrderQueue.getOrCreateInstance(queueSize);
+        ServingQueue.getOrCreateInstance(queueSize);
     }
 
     public static Restaurant getInstance() {

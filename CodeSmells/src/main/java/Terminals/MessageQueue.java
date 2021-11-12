@@ -5,9 +5,9 @@ import Entities.Queue;
 
 public class MessageQueue extends Queue<Message> {
 
-    private final static int messageQueueSize = 10;
+    private final static int MESSAGE_QUEUE_SIZE = 10;
     MessageQueue(){
-        super(messageQueueSize);
+        super(MESSAGE_QUEUE_SIZE);
     }
 
 

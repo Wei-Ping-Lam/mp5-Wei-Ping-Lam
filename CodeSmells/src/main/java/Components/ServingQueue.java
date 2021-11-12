@@ -1,7 +1,5 @@
 package Components;
 
-import Entities.MenuItem;
-import Entities.Order;
 import Entities.Queue;
 import Entities.Serving;
 
@@ -17,7 +15,7 @@ public class ServingQueue extends Queue<Serving> {
     public static ServingQueue getInstance() {
         return instance;
     }
-
+    
     public static ServingQueue getOrCreateInstance(int size){
         synchronized (ServingQueue.class) {
             if (instance == null) {
